@@ -28,13 +28,19 @@ int isHappy(int n) {
 
 int main(void)
 {
-    int i = 0;
+    int j = 0;
 
-    for ( i = 0 ; i < 30 ; i++ ) {
-        printf("i(%d): happy? %d\n", i, isHappy(i));
-    }
-    for ( i = 999500 ; i < 999999 ; i++ ) {
-        printf("i(%d): happy? %d\n", i, isHappy(i));
+    for (j = 0; j < 1000; j++) {
+        int i = 0;
+
+        for ( i = 0 ; i < 30 ; i++ ) {
+            //printf("%s\n", isHappy(i) > 0 ? "true" : "false");
+            isHappy(i);
+        }
+        for ( i = 999500 ; i < 999999 ; i++ ) {
+            //printf("%s\n", isHappy(i) > 0 ? "true" : "false");
+            isHappy(i);
+        }
     }
 
     return 0;
