@@ -28,14 +28,14 @@ int isHappy(int n) {
 
 int main(void)
 {
-	int i = 0;
-	
-	for ( i = 0 ; i < 30 ; i++ ) {
-  	 	printf("i(%d): happy? %d\n", i, isHappy(i));
-	}
-	for ( i = 999500 ; i < 999999 ; i++ ) {
-  	 	printf("i(%d): happy? %d\n", i, isHappy(i));
-	}
+    int i = 0;
 
-	return 0;
+    for ( i = 0 ; i < 30 ; i++ ) {
+        printf("i(%d): happy? %d\n", i, isHappy(i));
+    }
+    for ( i = 999500 ; i < 999999 ; i++ ) {
+        printf("i(%d): happy? %d\n", i, isHappy(i));
+    }
+
+    return 0;
 }
