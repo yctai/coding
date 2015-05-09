@@ -6,7 +6,7 @@ var isHappy = function(n) {
     var mod = 0,
         new_sum = n,
         sqr = [ 0, 1, 4, 9, 16, 25, 36, 49, 64, 81 ],
-	route = {};
+	    route = new Array(1000);
 
     while ( new_sum > 1 ) {
         n = new_sum;
@@ -16,10 +16,10 @@ var isHappy = function(n) {
             new_sum += sqr[mod];
             n = (n - mod) / 10;        
         }
-	if ( new_sum in route ) {
-	    return false;
-	} else {
-	    route[new_sum] = 1;
+        if ( !undefined route[new_sum]  ) {
+            return false;
+        } else {
+            route[new_sum] = 1;
         }
     }
     if ( new_sum == 1 ) {
