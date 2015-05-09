@@ -28,10 +28,16 @@ var isHappy = function(n) {
     return false;
 };
 
-for ( var i = 0; i < 30; i++ ) {
-    console.log(isHappy(i));
-}
+var i, j;
 
-for ( var i = 999500; i < 999999 ; i++ ) {
-    console.log(isHappy(i));
+for (j = 0; j < 1000; j++) {
+	for ( i = 0; i < 30; i++ ) {
+		//console.log(isHappy(i));
+		isHappy(i);
+	}
+
+	for ( i = 999500; i < 999999 ; i++ ) {
+		//console.log(isHappy(i));
+		isHappy(i);
+	}
 }
