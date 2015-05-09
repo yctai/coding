@@ -16,7 +16,7 @@ var isHappy = function(n) {
             new_sum += sqr[mod];
             n = (n - mod) / 10;        
         }
-        if ( !undefined route[new_sum]  ) {
+        if ( route[new_sum] ) {
             return false;
         } else {
             route[new_sum] = 1;
